@@ -18,6 +18,7 @@ while row_index < src.count do
     inner_results << inner_array_1
     element_index +=1
   end
+  outer_results << inner_results
   row_index += 1
 end
 puts outer_results
