@@ -8,13 +8,13 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
 phrase = []
 
-row_index = 0 
-while row_index < src.length do 
+row_index = 0
+while row_index < src.length do
   element_index = src[row_index]
-  phrase << "I love #{element_index[0]} and #{element_index[1] on my pizza}" 
-  row_index += 1 
-end 
-phrase 
+  phrase << "I love #{element_index[0]} and #{element_index[1] on my pizza}"
+  row_index += 1
+end
+phrase
 end
 
 def find_greater_pair(src)
