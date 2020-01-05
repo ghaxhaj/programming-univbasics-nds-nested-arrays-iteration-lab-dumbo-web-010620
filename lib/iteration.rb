@@ -6,22 +6,15 @@ def join_ingredients(src)
   #
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
-outer_results = "I love #{inner_array_0} and #{inner_array_1} on my pizza"
-row_index = 0
-while row_index < src.count do
-  element_index = 0
-  inner_results = []
-  while element_index < src[row_index].count do
-    src[row_index][element_index][0] = inner_array_0
-    inner_results << inner_array_0
-    src[row_index][element_index][1] = inner_array_1
-    inner_results << inner_array_1
-    element_index +=1
-  end
-  outer_results << inner_results
-  row_index += 1
-end
-puts outer_results
+phrase = []
+
+row_index = 0 
+while row_index < src.length do 
+  element_index = src[row_index]
+  phrase << "I love #{element_index[0]} and #{element_index[1] on my pizza}" 
+  row_index += 1 
+end 
+phrase 
 end
 
 def find_greater_pair(src)
