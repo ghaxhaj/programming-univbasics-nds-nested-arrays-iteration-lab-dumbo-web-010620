@@ -11,7 +11,7 @@ phrase = []
 row_index = 0
 while row_index < src.length do
   element_index = src[row_index]
-  phrase << "I love #{element_index[0]} and #{element_index[1] on my pizza}"
+  phrase << "I love #{element_index[0]} and #{element_index[1]} on my pizza"
   row_index += 1
 end
 phrase
