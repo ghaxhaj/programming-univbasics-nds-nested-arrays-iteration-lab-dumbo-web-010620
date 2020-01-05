@@ -10,9 +10,12 @@ outer_results = "I love #{inner_array_0} and #{inner_array_1} on my pizza"
 row_index = 0
 while row_index < src.count do
   element_index = 0
+  inner_results = []
   while element_index < src[row_index].count do
     src[row_index][element_index][0] = inner_array_0
+    inner_results << inner_array_0
     src[row_index][element_index][1] = inner_array_1
+    inner_results << inner_array_1
     element_index +=1
   end
   row_index += 1
